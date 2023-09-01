@@ -7,6 +7,12 @@ const controller = require("../controller/controller");
 const Middleware = require("../middleware/midW");
 
 // // // For checking only -------->
+
+router.get("/" , (req , res)=>{
+  res.send("Check now on / path")
+})
+
+
 router.get("/c" , (req , res)=>{
   res.send("Check now")
 })
