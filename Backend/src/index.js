@@ -59,7 +59,7 @@ app.use( "/" , routes)
 // //  
 
 
-mongoose.set('strictQuery', true)
+// mongoose.set('strictQuery', true)
 mongoose.connect(process.env.DB).then(() => {
   console.log("Mongo Connected");
 }).catch((err) => {
